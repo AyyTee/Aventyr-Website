@@ -3,10 +3,10 @@ var divMargin = 750;
 var portalDivs = ['div1', 'div2'];
 window.onscroll = function() {update()};
 window.onresize = function() {update()};
+window.onload = function() {update()};
 
 function update() {
-	
-	
+
 	for (var i = 0; i < 2; i++)
 	{
 		var center = screenCenter();
@@ -66,7 +66,7 @@ function screenCoordinates(margin) {
 function getPortalPosition(portalIndex) {
 	var div = portalDivs[portalIndex];
 	var y = cumulativeOffset(document.getElementById(div)).y + divMargin/2;
-	var portalWidth = 150;
+	var portalWidth = getScreenSize().x * 0.18;
 	var center = screenCenter();
 	var vLeft = new Vector2(center.x - portalWidth/2, y);
 	var vRight = new Vector2(center.x + portalWidth/2, y);
@@ -125,6 +125,6 @@ function getScreenSize() {
 	var g = d.getElementsByTagName('body')[0];
 	var x = w.innerWidth || e.clientWidth || g.clientWidth;
 	var y = w.innerHeight || e.clientHeight || g.clientHeight;
-	return new Vector2(x, y);
+	return new Vector2(x - 20, y);
 }
 

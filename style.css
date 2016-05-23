@@ -12,3 +12,19 @@
     margin-right: 0px;
     margin-bottom: 0px;
 }
+
+.background1 {
+	background-image: url(tile.jpg);
+}
+
+.centerImage {
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.aventyr {
+	width: 100%;
+	height: 100vh;
+	margin: 0px;
+}
