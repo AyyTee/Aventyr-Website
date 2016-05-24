@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 .portalCanvas {
-    margin-bottom: -1500px;
+	margin-bottom: -1500px;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -8,9 +10,9 @@
 .bodyDiv {
 	background-color:black;
 	margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
 
 .background1 {
@@ -20,5 +22,27 @@
 .centerImage {
 	display:block;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+}
+
+.navButton {
+	cursor: pointer; 
+	cursor: hand;
+}
+
+.navBar {
+	width: 100%;
+	height:25px;
+	margin: 0px;
+	top: 0px;
+	background-color: #404040;
+	border-bottom-style: solid;
+	border-bottom-color: #707070;
+	position: fixed;
+	border-width: thin;
+	z-index: 20;
+	font-family: monospace;
+	font-size: 18px;
+	color: #707070;
+	text-align: center;
 }
